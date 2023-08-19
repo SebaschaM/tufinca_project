@@ -1,0 +1,324 @@
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.tittle_text {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.1rem;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.icon_user {
+  width: 4rem;
+  height: 4rem;
+}
+
+/* CAROUSEL */
+
+.carousel_container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel_item {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel_img {
+  width: 100%;
+  height: 32rem;
+}
+
+.carousel_indicators {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel_indicator {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+
+.carousel_indicator.active {
+  background-color: white;
+}
+
+.carousel_control-prev,
+.carousel_control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn_nav {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.carousel_control-prev {
+  left: 1rem;
+}
+
+.carousel_control-next {
+  right: 1rem;
+}
+
+.carousel_control-prev:hover,
+.carousel_control-next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* SECTION NAME PROPERTY AND PRICE */
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4.8rem;
+  padding: 4.2rem;
+}
+
+.header_information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ubication_name_container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.3rem;
+}
+
+.ubication_container {
+  display: flex;
+  column-gap: 0.3rem;
+  align-items: center;
+}
+
+.text_subtittle {
+  color: #007aff;
+  font-family: "Lora", serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.svg_icon_ubication {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.text_ubication {
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.button_verify {
+  display: flex;
+  padding: 0;
+  height: 6rem;
+  padding: 1.25rem 2.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.62rem;
+  border-radius: 0.5rem;
+  background: #007aff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button_verify:hover {
+  background: #0062cc;
+  transform: scale(1.021);
+  transition: transform 0.5s ease-in-out;
+}
+
+.text_button {
+  color: #fff;
+  font-size: 1.56rem;
+  font-family: "Lora", serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.svg_icon_button {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #f50808;
+}
+
+.text_cost_property {
+  font-family: "Lora", serif;
+  font-size: 2.81rem;
+  font-style: normal;
+  margin-top: 2.5rem;
+  font-weight: 700;
+}
+
+/* SECTION NAME PROPERTY AND PRICE */
+
+.container_subtittle {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+
+.text_description_property {
+  text-align: justify;
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 1.87rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* SECTION DETAIL */
+.icons_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.icon_detail_container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.62rem;
+  align-items: center;
+}
+
+.icon_detail {
+  width: 4.5rem;
+  height: 4.5rem;
+  cursor: pointer;
+}
+
+.icon_detail:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.text_detail {
+  color: #0051a9;
+  text-align: justify;
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 768px) {
+  .header_container {
+    padding: 1rem;
+  }
+
+  .tittle_text {
+    font-size: 1.5rem;
+  }
+
+  .icon_user {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .carousel_img {
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  /* SECTION NAME PROPERTY AND PRICE */
+  .main_container {
+    padding: 1.2rem;
+    row-gap: 3rem;
+  }
+
+  .header_information {
+    flex-direction: column-reverse;
+    row-gap: 2rem;
+  }
+
+  .ubication_name_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .text_subtittle {
+    font-size: 1.8rem;
+  }
+
+  .svg_icon_ubication,
+  .svg_icon_button {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .text_ubication {
+    font-size: 0.875rem;
+  }
+
+  .button_verify {
+    padding: 1.25rem;
+    height: 2rem;
+  }
+
+  .text_button {
+    font-size: 1rem;
+  }
+
+  .text_cost_property {
+    font-size: 2.2rem;
+    margin-top: 0;
+  }
+
+  /* SECTION DESCRIPTION PROPERTY */
+  .text_description_property {
+    font-size: 1rem;
+  }
+
+  /* SECTION DETAILS */
+
+  .text_detail {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+}
