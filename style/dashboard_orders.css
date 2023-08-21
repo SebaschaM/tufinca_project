@@ -1,3 +1,5 @@
+/* FONTS Poppins - Lora - Hind Madurai */
+
 *,
 body,
 html {
@@ -296,7 +298,6 @@ body {
   text-decoration: none;
   overflow: hidden;
   z-index: 1;
-  font-family: inherit;
 }
 .button_form:hover {
   color: #fff;

@@ -1,3 +1,6 @@
+/* FONTS Poppins - Lora - Hind Madurai */
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Lora:wght@500&family=Montserrat:wght@900&family=Poppins:wght@400;500&display=swap");
+
 *,
 body,
 html {
@@ -6,24 +9,31 @@ html {
   box-sizing: border-box;
 }
 
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+
+h2 {
+  color: #007aff;
+  font-family: "Lora", serif;
+  font-weight: 500;
+}
+
+p {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 500;
+}
+
 .header_container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 3rem;
 }
 
 .tittle_text {
-  color: #000;
-  font-family: "Montserrat", sans-serif;
   font-size: 3.1rem;
-  font-style: normal;
-  font-weight: 900;
-}
-
-.icon_user {
-  width: 4rem;
-  height: 4rem;
 }
 
 /* CAROUSEL */
@@ -47,7 +57,7 @@ html {
 
 .carousel_img {
   width: 100%;
-  height: 32rem;
+  height: 38rem;
 }
 
 .carousel_indicators {
@@ -111,7 +121,7 @@ html {
   display: flex;
   flex-direction: column;
   row-gap: 4.8rem;
-  padding: 4.2rem;
+  padding: 3rem;
 }
 
 .header_information {
@@ -125,6 +135,12 @@ html {
   row-gap: 0.3rem;
 }
 
+.name_property_container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
 .ubication_container {
   display: flex;
   column-gap: 0.3rem;
@@ -132,11 +148,7 @@ html {
 }
 
 .text_subtittle {
-  color: #007aff;
-  font-family: "Lora", serif;
   font-size: 2.5rem;
-  font-style: normal;
-  font-weight: 700;
 }
 
 .svg_icon_ubication {
@@ -145,10 +157,8 @@ html {
 }
 
 .text_ubication {
-  font-family: "Hind Madurai", sans-serif;
+  color: #000000;
   font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 400;
 }
 
 .button_verify {
@@ -160,6 +170,7 @@ html {
   align-items: center;
   gap: 0.62rem;
   border-radius: 0.5rem;
+  transition: transform 0.3s ease;
   background: #007aff;
   border: none;
   cursor: pointer;
@@ -169,15 +180,12 @@ html {
 .button_verify:hover {
   background: #0062cc;
   transform: scale(1.021);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.3s ease;
 }
 
 .text_button {
   color: #fff;
   font-size: 1.56rem;
-  font-family: "Lora", serif;
-  font-style: normal;
-  font-weight: 400;
 }
 
 .svg_icon_button {
@@ -187,11 +195,10 @@ html {
 }
 
 .text_cost_property {
-  font-family: "Lora", serif;
   font-size: 2.81rem;
-  font-style: normal;
   margin-top: 2.5rem;
-  font-weight: 700;
+  color: #000000;
+  font-weight: 600;
 }
 
 /* SECTION NAME PROPERTY AND PRICE */
@@ -204,46 +211,49 @@ html {
 
 .text_description_property {
   text-align: justify;
-  font-family: "Hind Madurai", sans-serif;
+  line-height: 1.5;
   font-size: 1.87rem;
-  font-style: normal;
-  font-weight: 400;
 }
 
 /* SECTION DETAIL */
+
 .icons_container {
   display: grid;
+  margin-bottom: 1rem;
   grid-template-columns: repeat(4, 1fr);
+}
+
+.icon_hover_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1rem;
+  transition: transform 0.3s ease;
+  align-items: center;
 }
 
 .icon_detail_container {
   display: flex;
   flex-direction: column;
-  row-gap: 0.62rem;
+  justify-content: center;
   align-items: center;
 }
 
 .icon_detail {
   width: 4.5rem;
   height: 4.5rem;
-  cursor: pointer;
 }
 
-.icon_detail:hover {
+.icon_hover_container:hover {
   transform: scale(1.1);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.3s ease;
 }
 
 .text_detail {
   color: #0051a9;
-  text-align: justify;
-  font-family: "Hind Madurai", sans-serif;
-  font-size: 1.875rem;
-  font-style: normal;
-  font-weight: 400;
+  text-align: center;
+  font-size: 1.87rem;
 }
-
-/* MODAL */
 
 /* MODAL */
 .modal_container {
@@ -276,10 +286,8 @@ html {
   align-items: center;
 }
 .text_header_modal {
-  font-family: "Lora", serif;
+  color: #000000;
   font-size: 2.81rem;
-  font-style: normal;
-  font-weight: 500;
 }
 
 .icon_close_modal {
@@ -316,7 +324,7 @@ html {
   font-size: 1.2rem;
   outline: none;
   transition-duration: 0.3s;
-  font-family: "Hind Madurai" sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .label_input_container {
   display: flex;
@@ -333,7 +341,8 @@ html {
   font-size: 0.9rem;
   font-weight: 400;
   color: #999;
-  font-family: "Hind Madurai", sans-serif;
+  font-family: "Poppins", sans-serif;
+
   overflow: hidden;
   font-weight: 500;
 }
@@ -390,10 +399,7 @@ html {
 
 .text_input_check {
   color: #7d7d7d;
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 300;
+  font-size: 1.2rem;
 }
 .date_check_text {
   font-family: "Poppins", sans-serif;
@@ -425,22 +431,16 @@ html {
   align-items: center;
 }
 .counter_text {
-  font-family: "Hind Madurai", sans-serif;
   font-size: 3.75rem;
-  font-style: normal;
-  font-weight: 400;
 }
 .occupant_text {
   color: #999;
-  font-family: "Hind Madurai", sans-serif;
   font-size: 1.56rem;
-  font-style: normal;
-  font-weight: 400;
 }
 /* BUTTON FORM */
 .button_form {
   display: inline-block;
-  padding: 0.9rem 1.8rem;
+  padding: 0.7rem 1.6rem;
   font-size: 1rem;
   color: #007aff;
   font-weight: 700;
@@ -452,7 +452,6 @@ html {
   text-decoration: none;
   overflow: hidden;
   z-index: 1;
-  font-family: inherit;
 }
 .button_form:hover {
   color: #fff;
@@ -474,18 +473,14 @@ html {
   transform: translateX(0);
 }
 .text_button_modal {
-  font-family: "Lora", serif;
-  font-size: 1.56rem;
-  font-style: normal;
-  font-weight: 600;
+  font-size: 1.3rem;
 }
 .text_modal_success {
   text-align: center;
+  color: #000000;
   width: 30rem;
-  font-family: "Lora", serif;
   font-size: 1.75rem;
-  font-style: normal;
-  font-weight: 600;
+  font-weight: 650;
 }
 .icon_approval {
   width: 8rem;
@@ -532,6 +527,10 @@ html {
     justify-content: space-between;
   }
 
+  .name_property_container {
+    row-gap: 0.8rem;
+  }
+
   .text_subtittle {
     font-size: 1.8rem;
   }
@@ -551,10 +550,6 @@ html {
     height: 2rem;
   }
 
-  .text_button {
-    font-size: 1rem;
-  }
-
   .text_cost_property {
     font-size: 2.2rem;
     margin-top: 0;
@@ -566,10 +561,14 @@ html {
   }
 
   /* SECTION DETAILS */
-
   .text_detail {
     text-align: center;
     font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .icon_detail {
+    width: 3rem;
+    height: 3rem;
   }
   /* MODAL */
   .modal {
@@ -666,8 +665,9 @@ html {
   }
 
   .text_button {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
+
   .text_modal_success {
     width: 100%;
     font-size: 1.5rem;
